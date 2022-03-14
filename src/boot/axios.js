@@ -3,6 +3,7 @@ import axios from 'axios'
 import { Buffer } from "buffer"
 import { Carousel, Navigation, Slide } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
+import *  as  nearAPI  from  "near-api-js";
 
 global.Buffer = Buffer
 
@@ -19,6 +20,7 @@ export default boot(({ app }) => {
   app.component('Carousel',Carousel)
   app.component('Slide',Slide)
   app.config.globalProperties.$axios = axios
+  app.config.globalProperties.$axios = nearAPI
   // ^ ^ ^ this will allow you to use this.$axios (for Vue Options API form)
   //       so you won't necessarily have to import axios in each vue file
 
