@@ -67,52 +67,57 @@
         <p class="text-24 offer-text">
           ChebuBears are not just a collection of painted bears, they are the reincarnation of the legendary Cheburashka, the Soviet Union’s best-loved cartoon character, who still  winnings hearts after half a century.
         </p>
-        <div class="offer-bottom">
-          <p class="text-48 text-practice">Launch date: t b a</p>
-          <div class="button green">button</div>
+<!--        <div class="offer-bottom">-->
+<!--          <p class="text-48 text-practice">Launch date: t b a</p>-->
+<!--          <div class="button green">button</div>-->
+<!--        </div>-->
+        <div class="offer-bottom-alt">
+          <p class="text-96 text-bold text-w-shadow-b text-w">Launch date: <span class="text-gr">T</span><span class="text-r2">B</span><span class="text-orange-4">A</span></p>
+
         </div>
       </div>
     </section>
 
     <section   class="collection">
       <div ref="collection" class="container">
-        <p class="text-72 text-practice text-w-shadow-w text-b text-center mb-45">A huge family with its own history…
+        <p class="text-72 text-practice text-w-shadow-b text-w text-center mb-45">A huge family with<br class="gt-sm"> its own history…
 </p>
         <p class="text-24  text-center text-black mb-100">
         At the request of Cheburashka, you can find a character remotely resembling a brown bear.
-We took the liberty to dilute this model with new tones corresponding to the current trends in the world of digital art.<br>
+We took the liberty to dilute this model with new tones corresponding to the current trends in the world of digital art.<br><br>
 You will get acquainted with the hero of the Soviet stage, trying on the images of various heroes and villains, the roles of people, various evil spiritsr and even gods.
 
         </p>
-        <div class="collection-wrapper">
-          <div class="buttons">
-            <div
-              @click="$refs.coll.prev()" class="prev-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="32" cy="32" r="32" />
-              <path d="M39 32H25"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M32 39L25 32L32 25"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            </div>
-            <div @click="$refs.coll.next()" class="next-btn">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="32" cy="32" r="32" />
-                <path d="M25 32H39"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M32 39L39 32L32 25"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+<!--        <div  class="collection-wrapper">-->
+<!--          <div class="buttons">-->
+<!--            <div-->
+<!--              @click="$refs.coll.prev()" class="prev-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--              <circle cx="32" cy="32" r="32" />-->
+<!--              <path d="M39 32H25"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>-->
+<!--              <path d="M32 39L25 32L32 25"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>-->
+<!--            </svg>-->
+<!--            </div>-->
+<!--            <div @click="$refs.coll.next()" class="next-btn">-->
+<!--              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                <circle cx="32" cy="32" r="32" />-->
+<!--                <path d="M25 32H39"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>-->
+<!--                <path d="M32 39L39 32L32 25"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>-->
+<!--              </svg>-->
 
-            </div>
-          </div>
-          <Carousel ref="coll" :settings="settings_top" :breakpoints="breakpoints_top">
-            <Slide v-for="(item,index) in collection" :key="index">
-              <div class="collection-item" >
-                <img draggable="false" :src="item.img" alt="">
-                <p class="collection-item__title">{{item.title}}</p>
-                <p class="collection-item__text">{{item.text}}</p>
-              </div>
-            </Slide>
-          </Carousel>
+<!--            </div>-->
+<!--          </div>-->
+<!--          <Carousel ref="coll" :settings="settings_top" :breakpoints="breakpoints_top">-->
+<!--            <Slide v-for="(item,index) in collection" :key="index">-->
+<!--              <div class="collection-item" >-->
+<!--                <img draggable="false" :src="item.img" alt="">-->
+<!--                <p class="collection-item__title">{{item.title}}</p>-->
+<!--                <p class="collection-item__text">{{item.text}}</p>-->
+<!--              </div>-->
+<!--            </Slide>-->
+<!--          </Carousel>-->
 
-        </div>
+<!--        </div>-->
+        <q-img src="~assets/coll.png"/>
 
       </div>
     </section>
@@ -848,6 +853,9 @@ export default {
 .text-72
   font-size: 72px
   line-height: 81px
+.text-96
+  font-size: 72px
+  line-height: 126px
 .text-18
   font-size: 18px
 .text-24
@@ -917,6 +925,9 @@ export default {
   margin: 0 auto
   position: relative
 @media (max-width: 900px)
+  .text-96
+    font-size: 48px
+    line-height: 62px
   .text-72
     font-size: 48px
     line-height: 62px
