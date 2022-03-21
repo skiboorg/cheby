@@ -1,45 +1,41 @@
 <template>
   <q-page class="">
     <div class="container">
-          <q-drawer
-      v-model="menuActive"
-
-      bordered
-    >
-      <div class="flex column items-center justify-center q-py-xl">
-         <p class="text-practice text-35 text-blue mb-80">cheby</p>
-        <p class="text-black text-h6 q-mb-lg">Collection</p>
-        <p class="text-black text-h6 q-mb-lg">Journey</p>
-        <p class="text-black text-h6 q-mb-lg">Team</p>
-        <p class="text-black text-h6 mb-80">Social</p>
-        <div class="flex items-center justify-center">
-          <a href="" class="q-mr-lg">
-<svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M49.326 13.2862C47.3544 12.3938 41.5631 11.1471 37.04 10.6412C35.4079 10.4587 28.2016 10.2434 28.0656 10.3731C28.031 10.4061 27.407 10.4671 26.6798 10.5088C22.4276 10.7521 14.8955 12.2661 12.733 13.3121C11.8543 13.7368 10.7954 14.7618 10.3671 15.602C9.42875 17.4427 7.63433 23.4482 6.79559 27.5556C5.87571 32.06 5.44619 35.7049 5.19982 41.0995C5.08886 43.5285 5.21533 43.9494 6.43706 45.2293C10.0289 48.9899 15.2141 51.3758 20.3194 51.6157C21.6604 51.6788 21.726 51.6696 22.384 51.3236C23.53 50.7209 23.706 50.4 24.7923 46.9334C25.3268 45.2268 25.7295 43.7936 25.6871 43.7484C25.6442 43.7032 25.3256 43.6294 24.9796 43.5847C23.4596 43.3878 20.7793 42.6848 18.6818 41.933C16.9709 41.3197 16.5766 41.1062 16.0701 40.5182C14.5603 38.7646 15.51 36.0036 17.7983 35.4946C18.5834 35.3201 18.6532 35.335 21.3228 36.2549C23.1166 36.873 24.7923 37.2886 26.7162 37.5931C28.7337 37.9123 33.4995 37.9109 35.4335 37.5905C37.3425 37.2743 39.8367 36.6257 41.4259 36.0322C43.1768 35.3782 43.6277 35.3096 44.5077 35.5639C46.861 36.2439 47.5334 39.1644 45.7109 40.7911C45.2659 41.1881 44.7713 41.4512 43.799 41.8079C41.952 42.4857 39.7663 43.0935 38.0423 43.409C37.2309 43.5575 36.5193 43.7214 36.4602 43.7736C36.3194 43.8983 38.0786 49.5651 38.4658 50.2331C38.8088 50.8252 39.7317 51.4861 40.3855 51.6081C41.6305 51.8402 44.8447 51.3599 47.148 50.5976C48.3793 50.1899 50.7935 49.0528 51.7396 48.4344C53.9009 47.0225 56.1332 45.0223 56.5985 44.0809C56.8204 43.6326 56.8449 43.331 56.8318 41.2015C56.7966 35.4464 55.8588 29.0283 54.1246 22.6731C53.4774 20.3004 52.2121 16.5175 51.7879 15.6853C51.3519 14.8303 50.1504 13.6591 49.326 13.2862ZM20.5562 27.314C19.7341 25.5596 20.7131 23.4473 22.5684 22.9729C23.2132 22.8079 24.435 22.9286 24.9951 23.2124C25.5863 23.5122 26.2568 24.225 26.5068 24.8195C26.6016 25.0461 26.6798 25.5732 26.6798 25.9906C26.6798 26.8813 26.4883 27.3986 25.9204 28.0415C24.4326 29.7255 21.4993 29.3278 20.5562 27.314ZM35.6769 24.683C36.0742 23.8755 36.7179 23.3014 37.5119 23.0456C38.2594 22.8051 39.4573 22.8808 40.098 23.2089C41.192 23.7691 41.8196 24.783 41.8196 25.9906C41.8196 28.0678 39.891 29.5024 37.7762 28.9981C35.8505 28.539 34.8209 26.4222 35.6769 24.683Z" fill="#7063FF"/>
-</svg>
-
-
-          </a>
-          <a href="">
-            <svg width="48" height="38" viewBox="0 0 48 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M41.9283 8.43395C41.6213 6.2204 40.5032 4.19976 38.7907 2.76392C37.0783 1.32809 34.8936 0.5794 32.6605 0.663064C30.4273 0.746727 28.3048 1.65678 26.7046 3.21672C25.1044 4.77666 24.1405 6.8753 24 9.10562C14.855 12.8773 5.91667 3.49978 5.91667 3.49978C3.33333 18.9998 11.0833 26.104 11.0833 26.104C7.57 29.3331 0.75 29.3331 0.75 29.3331C0.75 29.3331 4.83167 37.0831 22.915 37.0831C40.9983 37.0831 42.0833 16.4164 42.0833 16.4164C43.7868 15.7966 45.2276 14.6136 46.1672 13.0633C47.1067 11.5131 47.4888 9.68843 47.25 7.89145C45.5076 8.30498 43.7183 8.48738 41.9283 8.43395Z" fill="#7063FF"/>
-</svg>
-
-          </a>
+      <q-drawer
+        v-model="menuActive"
+        bordered>
+        <div class="flex column items-center justify-center q-py-xl">
+          <p class="text-practice text-35 text-blue mb-80">cheby</p>
+          <p class="text-black text-h6 q-mb-lg" @click="menuActive= false, scrollToElement('collection')">Collection</p>
+          <p class="text-black text-h6 q-mb-lg" @click="menuActive= false, scrollToElement('journey')">Journey</p>
+          <p class="text-black text-h6 q-mb-lg" @click="menuActive= false, scrollToElement('team')">Team</p>
+          <p class="text-black text-h6 q-mb-lg" @click="menuActive= false, scrollToElement('faq')">Faq</p>
+          <p class="text-black text-h6 mb-80" @click="menuActive= false, scrollToElement('social')">Social</p>
+          <div class="flex items-center justify-center">
+            <a href="" class="q-mr-lg">
+              <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M49.326 13.2862C47.3544 12.3938 41.5631 11.1471 37.04 10.6412C35.4079 10.4587 28.2016 10.2434 28.0656 10.3731C28.031 10.4061 27.407 10.4671 26.6798 10.5088C22.4276 10.7521 14.8955 12.2661 12.733 13.3121C11.8543 13.7368 10.7954 14.7618 10.3671 15.602C9.42875 17.4427 7.63433 23.4482 6.79559 27.5556C5.87571 32.06 5.44619 35.7049 5.19982 41.0995C5.08886 43.5285 5.21533 43.9494 6.43706 45.2293C10.0289 48.9899 15.2141 51.3758 20.3194 51.6157C21.6604 51.6788 21.726 51.6696 22.384 51.3236C23.53 50.7209 23.706 50.4 24.7923 46.9334C25.3268 45.2268 25.7295 43.7936 25.6871 43.7484C25.6442 43.7032 25.3256 43.6294 24.9796 43.5847C23.4596 43.3878 20.7793 42.6848 18.6818 41.933C16.9709 41.3197 16.5766 41.1062 16.0701 40.5182C14.5603 38.7646 15.51 36.0036 17.7983 35.4946C18.5834 35.3201 18.6532 35.335 21.3228 36.2549C23.1166 36.873 24.7923 37.2886 26.7162 37.5931C28.7337 37.9123 33.4995 37.9109 35.4335 37.5905C37.3425 37.2743 39.8367 36.6257 41.4259 36.0322C43.1768 35.3782 43.6277 35.3096 44.5077 35.5639C46.861 36.2439 47.5334 39.1644 45.7109 40.7911C45.2659 41.1881 44.7713 41.4512 43.799 41.8079C41.952 42.4857 39.7663 43.0935 38.0423 43.409C37.2309 43.5575 36.5193 43.7214 36.4602 43.7736C36.3194 43.8983 38.0786 49.5651 38.4658 50.2331C38.8088 50.8252 39.7317 51.4861 40.3855 51.6081C41.6305 51.8402 44.8447 51.3599 47.148 50.5976C48.3793 50.1899 50.7935 49.0528 51.7396 48.4344C53.9009 47.0225 56.1332 45.0223 56.5985 44.0809C56.8204 43.6326 56.8449 43.331 56.8318 41.2015C56.7966 35.4464 55.8588 29.0283 54.1246 22.6731C53.4774 20.3004 52.2121 16.5175 51.7879 15.6853C51.3519 14.8303 50.1504 13.6591 49.326 13.2862ZM20.5562 27.314C19.7341 25.5596 20.7131 23.4473 22.5684 22.9729C23.2132 22.8079 24.435 22.9286 24.9951 23.2124C25.5863 23.5122 26.2568 24.225 26.5068 24.8195C26.6016 25.0461 26.6798 25.5732 26.6798 25.9906C26.6798 26.8813 26.4883 27.3986 25.9204 28.0415C24.4326 29.7255 21.4993 29.3278 20.5562 27.314ZM35.6769 24.683C36.0742 23.8755 36.7179 23.3014 37.5119 23.0456C38.2594 22.8051 39.4573 22.8808 40.098 23.2089C41.192 23.7691 41.8196 24.783 41.8196 25.9906C41.8196 28.0678 39.891 29.5024 37.7762 28.9981C35.8505 28.539 34.8209 26.4222 35.6769 24.683Z" fill="#7063FF"/>
+              </svg>
+            </a>
+            <a href="">
+              <svg width="48" height="38" viewBox="0 0 48 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M41.9283 8.43395C41.6213 6.2204 40.5032 4.19976 38.7907 2.76392C37.0783 1.32809 34.8936 0.5794 32.6605 0.663064C30.4273 0.746727 28.3048 1.65678 26.7046 3.21672C25.1044 4.77666 24.1405 6.8753 24 9.10562C14.855 12.8773 5.91667 3.49978 5.91667 3.49978C3.33333 18.9998 11.0833 26.104 11.0833 26.104C7.57 29.3331 0.75 29.3331 0.75 29.3331C0.75 29.3331 4.83167 37.0831 22.915 37.0831C40.9983 37.0831 42.0833 16.4164 42.0833 16.4164C43.7868 15.7966 45.2276 14.6136 46.1672 13.0633C47.1067 11.5131 47.4888 9.68843 47.25 7.89145C45.5076 8.30498 43.7183 8.48738 41.9283 8.43395Z" fill="#7063FF"/>
+              </svg>
+            </a>
+          </div>
         </div>
-      </div>
-    </q-drawer>
+      </q-drawer>
       <header class="header top q-px-md q-px-md-none">
         <q-btn @click="menuActive=!menuActive" round dense class="lt-md" icon="menu"/>
         <p class="text-practice text-35">cheby</p>
         <div class="header-inner gt-sm">
           <nav class="nav">
             <ul>
-              <li>Collection</li>
-              <li>Journey</li>
-              <li>Team</li>
-              <li>FAQ</li>
-              <li>Social</li>
+              <li @click="scrollToElement('collection')">Collection</li>
+              <li @click="scrollToElement('journey')">Journey</li>
+              <li @click="scrollToElement('team')">Team</li>
+              <li @click="scrollToElement('faq')">FAQ</li>
+              <li @click="scrollToElement('social')">Social</li>
             </ul>
           </nav>
           <div class="">
@@ -58,13 +54,13 @@
           </div>
 
         </div>
-          <div style="font-size: 18px; padding: 24px" class="button blue gt-sm">connect a wallet </div>
+        <div style="font-size: 18px; padding: 24px" class="button blue gt-sm">connect a wallet </div>
       </header>
     </div>
     <section class="offer">
       <div class="container">
         <div  class="offer-img">
-          <q-img fit="contain" src="~assets/offer-inner-img.png" alt=""/>
+          <q-img fit="contain" src="~assets/gif.gif" alt=""/>
         </div>
 
         <p class="text-practice text-72 text-w-shadow-b mb-30">Meet the gorgeous/<br>astonishing ChebuBears!</p>
@@ -78,24 +74,26 @@
       </div>
     </section>
 
-    <section class="collection">
-      <div class="container">
-        <p class="text-72 text-practice text-w-shadow-w text-b text-center mb-45">the collection</p>
-        <p class="text-24 offer-text text-center mb-100">
-          At the request of Cheburashka, you can find a character remotely resembling a brown bear. We took the liberty to dilute this model with new tones corresponding to the current trends in the world of digital art.
-          <br><br>
-          You will get acquainted with the hero of the Soviet stage, trying on the images of various heroes and villains, the roles of people, various evil spirits and even gods.
+    <section   class="collection">
+      <div ref="collection" class="container">
+        <p class="text-72 text-practice text-w-shadow-w text-b text-center mb-45">A huge family with its own history…
+</p>
+        <p class="text-24  text-center text-black mb-100">
+        At the request of Cheburashka, you can find a character remotely resembling a brown bear.
+We took the liberty to dilute this model with new tones corresponding to the current trends in the world of digital art.<br>
+You will get acquainted with the hero of the Soviet stage, trying on the images of various heroes and villains, the roles of people, various evil spiritsr and even gods.
 
         </p>
         <div class="collection-wrapper">
           <div class="buttons">
-            <div @click="$refs.coll.next()" class="prev-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div
+              @click="$refs.coll.prev()" class="prev-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="32" cy="32" r="32" />
               <path d="M39 32H25"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M32 39L25 32L32 25"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             </div>
-            <div @click="$refs.coll.prev()" class="next-btn">
+            <div @click="$refs.coll.next()" class="next-btn">
               <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="32" cy="32" r="32" />
                 <path d="M25 32H39"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -118,7 +116,7 @@
 
       </div>
     </section>
-      <section class="rarity">
+    <section class="rarity">
       <div class="container">
         <p class="text-72 text-practice text-w-shadow-b text-w text-center mb-45">rarity</p>
         <p class="text-24 offer-text text-center mb-100">         The ChebuBears  family can really be called huge. And how, in such a variety, can you understand what kind of rarity a character has dropped to you? This table will help you!
@@ -140,7 +138,7 @@
                 <p class="text-grey-5">1500</p>
               </div>
               <div class="text-practice text-black text-h6 q-mb-lg">Types</div>
-               <div class="rarity-grid ">
+              <div class="rarity-grid ">
                 <p class="text-gr">Common</p>
                 <p class="text-grey-9">Classic colors and clothes</p>
               </div>
@@ -162,9 +160,9 @@
             </div>
           </div>
         </div>
-          <q-img class="lt-md q-mb-lg" src="~assets/chebus.png"/>
+        <q-img class="lt-md q-mb-lg" src="~assets/chebus.png"/>
         <div class="rarity-wrapper mb-45">
-           <div class="text-practice text-black text-h6 q-mb-lg">Variations</div>
+          <div class="text-practice text-black text-h6 q-mb-lg">Variations</div>
           <div class="row q-col-gutter-lg">
             <div class="col-12 col-md-6">
 
@@ -172,34 +170,34 @@
                 <p class="text-black">12</p>
                 <p class="text-grey-9">Backgrounds</p>
               </div>
-               <div class="rarity-grid ">
+              <div class="rarity-grid ">
                 <p class="text-black">14</p>
                 <p class="text-grey-9">Body color</p>
               </div>
-               <div class="rarity-grid ">
+              <div class="rarity-grid ">
                 <p class="text-black">16</p>
                 <p class="text-grey-9">Clothes</p>
               </div>
-               <div class="rarity-grid ">
+              <div class="rarity-grid ">
                 <p class="text-black">32</p>
                 <p class="text-grey-9">Facial expressions</p>
               </div>
 
             </div>
-           <div class="col-12 col-md-6">
-            <div class="rarity-grid ">
+            <div class="col-12 col-md-6">
+              <div class="rarity-grid ">
                 <p class="text-black">14</p>
                 <p class="text-grey-9">Headgear</p>
               </div>
-             <div class="rarity-grid ">
+              <div class="rarity-grid ">
                 <p class="text-black">24</p>
                 <p class="text-grey-9">Accessories</p>
               </div>
-             <div class="rarity-grid ">
+              <div class="rarity-grid ">
                 <p class="text-black">32</p>
                 <p class="text-grey-9">Glasses</p>
               </div>
-             <div class="rarity-grid ">
+              <div class="rarity-grid ">
                 <p class="text-blue">1 821 606 000</p>
                 <p class="text-blue">Total variations</p>
               </div>
@@ -213,21 +211,20 @@
     <section class="rare-collection">
 
       <div class="container">
-        <p class="text-72 text-practice text-w-shadow-w text-b text-center mb-30">rare collection</p>
+        <p class="text-72 text-practice text-w-shadow-b text-w text-center mb-30">Alpha-Bears Collection</p>
         <p class="text-24 offer-text text-center mb-30">
-          That's why it's really worth hunting.
-          Of course, every bear in our collection is equally unique and valuable to us, but there are those that stand out strongly from the general background, such we call Alpha.
-
+          That's why it's really worth hunting.<br>
+Of course, every bear in our collection is equally unique and valuable to us, but there are those that stand out strongly from the general background, such we call Alpha.
         </p>
         <div class="rare-collection-wrapper">
           <div class="buttons">
-            <div @click="$refs.rare.next()" class="prev-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div @click="$refs.rare.prev()" class="prev-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="32" cy="32" r="32" />
               <path d="M39 32H25"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M32 39L25 32L32 25"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             </div>
-            <div @click="$refs.rare.prev()" class="next-btn">
+            <div @click="$refs.rare.next()" class="next-btn">
               <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="32" cy="32" r="32" />
                 <path d="M25 32H39"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -237,7 +234,7 @@
             </div>
           </div>
           <Carousel ref="rare" >
-            <Slide v-for="(item,index) in rare_collection" :key="index">
+            <Slide class="q-px-md" v-for="(item,index) in rare_collection" :key="index">
               <div class="rare-collection-item" >
                 <div class="rare-collection-item__img-wrapper">
                   <div class="rare-collection-item__img-inner" :style="{'background': `url(${item.bg_img}`}">
@@ -245,29 +242,29 @@
                   </div>
                 </div>
                 <div class="rare-collection-item__bottom">
-                      <div class="rare-collection-item__title">
-                  <p class="text-35 text-b text-practice mr-20">{{item.title1}}</p>
-                  <p class="text-35 text-blue text-practice mr-15">{{item.title2}}</p>
-                  <img draggable="false" :src="item.icon" alt="">
-                </div>
-                <p class="rare-collection-item__text text-b" v-html="item.text">
+                  <div class="rare-collection-item__title">
+                    <p class="text-35 text-b text-practice mr-20">{{item.title1}}</p>
+                    <p class="text-35 text-blue text-practice mr-15">{{item.title2}}</p>
+                    <img draggable="false" :src="item.icon" alt="">
+                  </div>
+                  <p class="rare-collection-item__text text-b" v-html="item.text">
 
-                </p>
-                <div class="rare-collection-item__got">
-                  <p class="text-24 text-black text-bold ">{{item.got_text}}</p>
+                  </p>
+                  <div class="rare-collection-item__got">
+                    <p class="text-24 text-black text-bold ">{{item.got_text}}</p>
 
-                  <div  class="rare-collection-item__got-item" :class="{'has_link':got_item.is_link}"
-                        v-for="(got_item,index1) in item.got_items" :key="index1">
-                    <img class="q-mr-sm" :src="got_item.icon" alt="">
-                    <p >{{got_item.text}}</p>
-                    <div v-if="got_item.img" class="rare-collection-item__got-item-img">
-                      <img :src="got_item.img" alt="">
+                    <div  class="rare-collection-item__got-item" :class="{'has_link':got_item.is_link}"
+                          v-for="(got_item,index1) in item.got_items" :key="index1">
+                      <img class="q-mr-sm" :src="got_item.icon" alt="">
+                      <p >{{got_item.text}}</p>
+                      <div v-if="got_item.img" class="rare-collection-item__got-item-img">
+                        <img :src="got_item.img" alt="">
+                      </div>
+
                     </div>
 
+
                   </div>
-
-
-                </div>
                   <div class="text-left">
                     <div class="button blue bl-sh">Check</div>
                   </div>
@@ -282,10 +279,10 @@
 
       </div>
     </section>
-    <section class="journey">
+    <section ref="journey" class="journey">
       <img draggable="false" class="journey-img-l gt-sm" src="~assets/j-l.png" alt="">
       <img draggable="false" class="journey-img-r gt-sm" src="~assets/j-r.png" alt="">
-      <div class="container">
+      <div  class="container">
         <p class="text-72 text-practice text-w-shadow-b text-w text-center mb-45">journey</p>
         <p class="text-24 offer-text text-center mb-100">
           Like any other, our journey begins with a clear plan of what and how we need to do.<br>
@@ -302,7 +299,7 @@
                 <p class="journey-item__info-date" :class="{done:item.is_done,negative:!item.need_border}">{{item.date}}</p>
                 <p class="journey-item__info-title">{{item.title}}</p>
                 <p class="journey-item__info-text">{{item.text}}</p>
-                 <q-img class="lt-md" fit="contain" v-if="item.img" :src="item.img" alt=""/>
+                <q-img class="lt-md" fit="contain" v-if="item.img" :src="item.img" alt=""/>
               </div>
             </div>
 
@@ -311,7 +308,7 @@
       </div>
     </section>
     <section class="team">
-      <div class="container">
+      <div ref="team" class="container">
         <p class="text-72 text-practice text-w-shadow-w text-b text-center mb-45">the team</p>
         <p class="text-24 offer-text text-center mb-100">
           This project was accompanied by our entire team from the very beginning of its journey.
@@ -334,7 +331,7 @@
     </section>
 
     <section class="faq">
-      <div class="container">
+      <div ref="faq" class="container">
         <p class="text-72 text-practice text-w-shadow-b text-w text-center mb-80">faq</p>
 
         <div class="faq-wrapper">
@@ -344,7 +341,6 @@
               <q-expansion-item
                 group="somegroup"
                 expand-icon-class="text-green-11"
-
                 :label="item.q"
                 :header-class="$q.screen.lt.md ? 'text-green-11  text-body1' : 'text-green-11  text-h6'"
               >
@@ -356,19 +352,13 @@
               </q-expansion-item>
               <hr style="opacity: .5">
             </div>
-
-
-
           </q-list>
-
-
-
         </div>
 
       </div>
     </section>
     <section class="social">
-      <div class="container">
+      <div ref="social" class="container">
         <p class="text-72 text-practice text-w-shadow-b text-w text-center mb-45">social</p>
         <p class="text-24 offer-text text-center mb-100">
           In order to keep up to date with the latest news and not miss anything important, we advise you to subscribe to our social networks.
@@ -401,11 +391,11 @@
           <div class="header-inner">
             <nav class="nav">
               <ul>
-                <li>Collection</li>
-                <li>Journey</li>
-                <li>Team</li>
-                <li>FAQ</li>
-                <li>Social</li>
+                <li @click="scrollToElement('collection')">Collection</li>
+                <li @click="scrollToElement('journey')">Journey</li>
+                <li @click="scrollToElement('team')">Team</li>
+                <li @click="scrollToElement('faq')">FAQ</li>
+                <li @click="scrollToElement('social')">Social</li>
               </ul>
             </nav>
             <div class="">
@@ -449,6 +439,8 @@
 
 
 
+import { scroll } from 'quasar'
+const { getScrollTarget, setVerticalScrollPosition } = scroll
 
 import { connect, keyStores, WalletConnection }  from  "near-api-js";
 // const { connect, keyStores, WalletConnection } = nearAPI;
@@ -478,9 +470,12 @@ export default {
             'In the future, after the release of the game, you will need bears from Tier 2 to access.'},
       ],
       team: [
-        {img: 'http://via.placeholder.com/250', link_text: 'link_text', url: '#', text: 'Community manager'},
-        {img: 'http://via.placeholder.com/250', link_text: 'discrodnickname', url: '#', text: 'Community manager'},
-        {img: 'http://via.placeholder.com/250', link_text: 'link_text', url: '#', text: 'Community manager'},
+        {img: 't1.png', link_text: 'link_text', url: '#', text: 'Art-director'},
+        {img: 't2.png', link_text: 'link_text', url: '#', text: 'Developer'},
+        {img: 't3.png', link_text: 'link_text', url: '#', text: 'Illustrator'},
+        {img: 't4.png', link_text: 'link_text', url: '#', text: 'Illustrator'},
+
+
       ],
       collection: [
         {
@@ -489,7 +484,7 @@ export default {
           text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sed risus accumsan, magna molestie urna.'
         },
         {
-         img: 'coll/test.png',
+          img: 'coll/test.png',
           title: 'Lorem ipsum dolor',
           text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sed risus accumsan, magna molestie urna.'
         },
@@ -499,12 +494,12 @@ export default {
           text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sed risus accumsan, magna molestie urna.'
         },
         {
-         img: 'coll/test.png',
+          img: 'coll/test.png',
           title: 'Lorem ipsum dolor',
           text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sed risus accumsan, magna molestie urna.'
         },
         {
-         img: 'coll/test.png',
+          img: 'coll/test.png',
           title: 'Lorem ipsum dolor',
           text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sed risus accumsan, magna molestie urna.'
         },
@@ -516,10 +511,10 @@ export default {
       ],
       rare_collection: [
         {
-          bg_img: 'rare/rare_bg_1.jpg',
-          img: 'rare/rare_top_1.png',
+          bg_img: 'rare/cartoon_bg.jpg',
+          img: 'rare/cartoon_collection.png',
           title1: 'Cartoons heroes',
-          title2: 'title2',
+          title2: '10 NFTs',
           icon: 'icon.png',
           text: 'Extremely rare specimens. This set is a well-known cartoon characters who have nurtured hundreds of thousands of young minds located in the most distant parts of the world.',
           got_text: 'Collect all 3 of 10 -> got',
@@ -527,14 +522,14 @@ export default {
             {text: '500 NIER', is_link: false,icon:'near.svg'},
             {text: 'Artwork', is_link: false,icon:'artwork.svg'},
             {text: 'Collection merch', is_link: false,icon:'collection.svg'},
-            {text: 'Alpha NFT', is_link: true,icon:'alpha.svg', img: 'rare/alpha1.png'},
+            {text: 'Alpha NFT', is_link: true,icon:'alpha.svg', img: 'rare/Cartoon_Alpha.png'},
           ]
         },//item
         {
-          bg_img: 'rare/rare_bg_1.jpg',
-          img: 'rare/rare_top_1.png',
+          bg_img: 'rare/dc_bg.jpg',
+          img: 'rare/dc_collection.png',
           title1: 'DC Champions',
-          title2: 'title2',
+          title2: '10 NFTs',
           icon: 'icon.png',
           text: 'The real justice league!\n' +
             'Here are the champions of the DC universe, valiantly defending our planet from various extraterrestrial invasions and attacks for more than ten years!',
@@ -543,14 +538,14 @@ export default {
             {text: '500 NIER', is_link: false,icon:'near.svg'},
             {text: 'Artwork', is_link: false,icon:'artwork.svg'},
             {text: 'Collection merch', is_link: false,icon:'collection.svg'},
-            {text: 'Alpha NFT', is_link: true,icon:'alpha.svg', img: 'rare/alpha1.png'},
+            {text: 'Alpha NFT', is_link: true,icon:'alpha.svg', img: 'rare/DC_Alpha.png'},
           ]
         },//item
         {
-          bg_img: 'rare/rare_bg_1.jpg',
-          img: 'rare/rare_top_1.png',
+          bg_img: 'rare/genesis_bg.jpg',
+          img: 'rare/genesis_collection.png',
           title1: 'Area 51',
-          title2: 'title2',
+          title2: '10 NFTs',
           icon: 'icon.png',
           text: 'In fact, it is not known whether these bears actually exist. Although various photos and videos with their participation are distributed on the network, and the number of witnesses is growing every day, there is no reliable fact of their existence yet.',
           got_text: 'Collect all 3 of 10 -> got',
@@ -558,14 +553,14 @@ export default {
             {text: '500 NIER', is_link: false,icon:'near.svg'},
             {text: 'Artwork', is_link: false,icon:'artwork.svg'},
             {text: 'Collection merch', is_link: false,icon:'collection.svg'},
-            {text: 'Alpha NFT', is_link: true,icon:'alpha.svg', img: 'rare/alpha1.png'},
+            {text: 'Alpha NFT', is_link: true,icon:'alpha.svg', img: 'rare/Random_Alpha.png'},
           ]
         },//item
         {
-          bg_img: 'rare/rare_bg_1.jpg',
-          img: 'rare/rare_top_1.png',
+          bg_img: 'rare/starwars_bg.jpg',
+          img: 'rare/starwars_collection.png',
           title1: 'StarWars',
-          title2: 'title2',
+          title2: '10 NFTs',
           icon: 'icon.png',
           text: 'Luke, I\'m your token…',
           got_text: 'Collect all 3 of 10 -> got',
@@ -573,29 +568,29 @@ export default {
             {text: '500 NIER', is_link: false,icon:'near.svg'},
             {text: 'Artwork', is_link: false,icon:'artwork.svg'},
             {text: 'Collection merch', is_link: false,icon:'collection.svg'},
-            {text: 'Alpha NFT', is_link: true,icon:'alpha.svg', img: 'rare/alpha1.png'},
+            {text: 'Alpha NFT', is_link: true,icon:'alpha.svg', img: 'rare/Starwars_Alpha.png'},
           ]
         },//item
         {
-          bg_img: 'rare/rare_bg_1.jpg',
-          img: 'rare/rare_top_1.png',
+          bg_img: 'rare/marvel_bg.jpg',
+          img: 'rare/marvel_collection.png',
           title1: 'MARVEL Champions',
-          title2: 'title2',
+          title2: '10 NFTs',
           icon: 'icon.png',
           text: 'Knights of the Marvel universe. Representatives of various factions united by one common feature - incredible strength. It\'s worth thinking twice before contacting these guys',
           got_text: 'Collect all 3 of 10 -> got',
           got_items: [
-           {text: '500 NIER', is_link: false,icon:'near.svg'},
+            {text: '500 NIER', is_link: false,icon:'near.svg'},
             {text: 'Artwork', is_link: false,icon:'artwork.svg'},
             {text: 'Collection merch', is_link: false,icon:'collection.svg'},
-            {text: 'Alpha NFT', is_link: true,icon:'alpha.svg', img: 'rare/alpha1.png'},
+            {text: 'Alpha NFT', is_link: true,icon:'alpha.svg', img: 'rare/Marvel_Alpha.png'},
           ]
         },//item
         {
-          bg_img: 'rare/rare_bg_1.jpg',
-          img: 'rare/rare_top_1.png',
+          bg_img: 'rare/ufo_bg.jpg',
+          img: 'rare/ufo_collection.png',
           title1: 'ChebuAliens',
-          title2: 'title2',
+          title2: '10 NFTs',
           icon: 'icon.png',
           text: 'A race of extraterrestrial ChebuBears living on the planet QuinQue World. It is not completely clear whether they are hostile or not. All the ships sent for research disappeared without a trace in the cosmic ocean, leaving behind only mysterious photos',
           got_text: 'Collect all 3 of 10 -> got',
@@ -603,14 +598,14 @@ export default {
             {text: '500 NIER', is_link: false,icon:'near.svg'},
             {text: 'Artwork', is_link: false,icon:'artwork.svg'},
             {text: 'Collection merch', is_link: false,icon:'collection.svg'},
-            {text: 'Alpha NFT', is_link: true,icon:'alpha.svg', img: 'rare/alpha1.png'},
+            {text: 'Alpha NFT', is_link: true,icon:'alpha.svg', img: 'rare/ufo_Alpha.png'},
           ]
         },//item
         {
-          bg_img: 'rare/rare_bg_1.jpg',
-          img: 'rare/rare_top_1.png',
+          bg_img: 'rare/misfits_bg.jpg',
+          img: 'rare/misfits_collection.png',
           title1: 'Reverse Side',
-          title2: 'title2',
+          title2: '10 NFTs',
           icon: 'icon.png',
           text: 'The reverse side of the ChebuVerse. Those who were not accepted by the usual society of bears gathered here. They were forced to get together in a group in order to somehow survive, and all the poisoning interests in common served as an excellent basis for their union.',
           got_text: 'Collect all 3 of 10 -> got',
@@ -618,14 +613,14 @@ export default {
             {text: '500 NIER', is_link: false,icon:'near.svg'},
             {text: 'Artwork', is_link: false,icon:'artwork.svg'},
             {text: 'Collection merch', is_link: false,icon:'collection.svg'},
-            {text: 'Alpha NFT', is_link: true,icon:'alpha.svg', img: 'rare/alpha1.png'},
+            {text: 'Alpha NFT', is_link: true,icon:'alpha.svg', img: 'rare/badguys_Alpha.png'},
           ]
         },//item
         {
-          bg_img: 'rare/rare_bg_1.jpg',
-          img: 'rare/rare_top_1.png',
+          bg_img: 'rare/zombie_bg.jpg',
+          img: 'rare/zombie_collection.png',
           title1: 'Nightmares',
-          title2: 'title2',
+          title2: '10 NFTs',
           icon: 'icon.png',
           text: 'The scariest representatives of ChebuBears. Living in utter darkness and feeding on other people\'s fears, they terrify all living beings from the moment of their birth.',
           got_text: 'Collect all 3 of 10 -> got',
@@ -633,7 +628,7 @@ export default {
             {text: '500 NIER', is_link: false,icon:'near.svg'},
             {text: 'Artwork', is_link: false,icon:'artwork.svg'},
             {text: 'Collection merch', is_link: false,icon:'collection.svg'},
-            {text: 'Alpha NFT', is_link: true,icon:'alpha.svg', img: 'rare/alpha1.png'},
+            {text: 'Alpha NFT', is_link: true,icon:'alpha.svg', img: 'rare/Zombie_Alpha.png'},
           ]
         },//item
 
@@ -728,6 +723,7 @@ export default {
       settings_top: {
         itemsToShow: 1,
         loop:true,
+
         snapAlign: 'center',
       },
       // breakpoints are mobile first
@@ -738,7 +734,7 @@ export default {
           itemsToShow: 2,
           snapAlign: 'center',
         },
-         600: {
+        600: {
           itemsToShow: 3,
           snapAlign: 'center',
         },
@@ -774,6 +770,15 @@ export default {
   },
 
   methods:{
+    scrollToElement (el) {
+      const ref = this.$refs[el]
+      const target = getScrollTarget(ref)
+
+      const offset = ref.offsetTop
+      console.log(offset)
+      const duration = 500
+      setVerticalScrollPosition(target, offset, duration)
+    },
     async conn(){
       console.log('dd')
 
@@ -846,7 +851,7 @@ export default {
 .text-18
   font-size: 18px
 .text-24
-  font-size: 24px
+  font-size: 23px
   line-height: 43px
   font-weight: 500
 .text-w
@@ -1067,6 +1072,10 @@ export default {
     img
       border-radius: 24px
       margin-bottom: 15px
+      width: 276px
+      height: 276px
+      object-fit: contain
+
     &__title
       text-align: center
       font-family: 'Practice', sans-serif
@@ -1084,7 +1093,7 @@ export default {
       img
         width: 160px
         height: 160px
-        object-fit: contain
+
 .rare-collection
   padding: 120px 0 200px 0
   background: url(~assets/r-c-bg.jpg) no-repeat center
@@ -1352,10 +1361,11 @@ export default {
   padding: 200px 0
   background: #3ce03f
   &-grid
-    max-width: 870px
-    margin: 0 auto 80px
+    //max-width: 870px
+    //margin: 0 auto 80px
     display: grid
-    grid-template-columns: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    margin-bottom: 80px
     grid-gap: 100px
   &-item
     text-align: center
@@ -1379,14 +1389,14 @@ export default {
         margin-right: 10px
 
 
-      //&::before
-      //  position: absolute
-      //  content: url(~assets/dis.svg)
-      //  left: -30px
-      //&:hover
-      //  color: #4546EA
-      //  &:before
-      //    content: url(~assets/dis1.svg)
+//&::before
+//  position: absolute
+//  content: url(~assets/dis.svg)
+//  left: -30px
+//&:hover
+//  color: #4546EA
+//  &:before
+//    content: url(~assets/dis1.svg)
 
 @media (max-width: 900px)
   .team-grid
