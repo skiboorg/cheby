@@ -330,7 +330,10 @@ Of course, every bear in our collection is equally unique and valuable to us, bu
           </div>
         </div>
         <div class="text-center">
-          <div class="button blue">more about our team</div>
+          <a href="https://quinque.digital/" target="_blank">
+            <div class="button blue">more about our team</div>
+          </a>
+
         </div>
       </div>
     </section>
@@ -475,10 +478,10 @@ export default {
             'In the future, after the release of the game, you will need bears from Tier 2 to access.'},
       ],
       team: [
-        {img: 't1.png', link_text: 'link_text', url: '#', text: 'Art-director'},
-        {img: 't2.png', link_text: 'link_text', url: '#', text: 'Developer'},
-        {img: 't3.png', link_text: 'link_text', url: '#', text: 'Illustrator'},
-        {img: 't4.png', link_text: 'link_text', url: '#', text: 'Illustrator'},
+        {img: 't1.png', link_text: 'Yoon Jang', url: '#', text: 'Art-director'},
+        {img: 't2.png', link_text: 'Hong Wooram', url: '#', text: 'Illustrator'},
+        {img: 't3.png', link_text: 'Koun Han', url: '#', text: 'Illustrator'},
+        {img: 't4.png', link_text: 'Brice Kiyoung Lee', url: '#', text: 'Developer'},
 
 
       ],
