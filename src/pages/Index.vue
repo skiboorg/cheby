@@ -67,60 +67,62 @@
         <p class="text-24 offer-text">
           ChebuBears are not just a collection of painted bears, they are the reincarnation of the legendary Cheburashka, the Soviet Union’s best-loved cartoon character, who still  winnings hearts after half a century.
         </p>
-<!--        <div class="offer-bottom">-->
-<!--          <p class="text-48 text-practice">Launch date: t b a</p>-->
-<!--          <div class="button green">button</div>-->
-<!--        </div>-->
+        <!--        <div class="offer-bottom">-->
+        <!--          <p class="text-48 text-practice">Launch date: t b a</p>-->
+        <!--          <div class="button green">button</div>-->
+        <!--        </div>-->
         <div class="offer-bottom-alt">
           <p class="text-96 text-bold text-w-shadow-b text-w">Launch date: <span class="text-gr">T</span><span class="text-r2">B</span><span class="text-orange-4">A</span></p>
 
         </div>
       </div>
     </section>
-
+    <img class="section_top" src="~assets/bg2_top.png" alt="">
     <section   class="collection">
+
       <div ref="collection" class="container">
         <p class="text-72 text-practice text-w-shadow-b text-w text-center mb-45">A huge family with<br class="gt-sm"> its own history…
-</p>
+        </p>
         <p class="text-24  text-center text-black mb-100">
-        At the request of Cheburashka, you can find a character remotely resembling a brown bear.
-We took the liberty to dilute this model with new tones corresponding to the current trends in the world of digital art.<br><br>
-You will get acquainted with the hero of the Soviet stage, trying on the images of various heroes and villains, the roles of people, various evil spiritsr and even gods.
+          At the request of Cheburashka, you can find a character remotely resembling a brown bear.
+          We took the liberty to dilute this model with new tones corresponding to the current trends in the world of digital art.<br><br>
+          You will get acquainted with the hero of the Soviet stage, trying on the images of various heroes and villains, the roles of people, various evil spiritsr and even gods.
 
         </p>
-<!--        <div  class="collection-wrapper">-->
-<!--          <div class="buttons">-->
-<!--            <div-->
-<!--              @click="$refs.coll.prev()" class="prev-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--              <circle cx="32" cy="32" r="32" />-->
-<!--              <path d="M39 32H25"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>-->
-<!--              <path d="M32 39L25 32L32 25"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>-->
-<!--            </svg>-->
-<!--            </div>-->
-<!--            <div @click="$refs.coll.next()" class="next-btn">-->
-<!--              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--                <circle cx="32" cy="32" r="32" />-->
-<!--                <path d="M25 32H39"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>-->
-<!--                <path d="M32 39L39 32L32 25"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>-->
-<!--              </svg>-->
+        <!--        <div  class="collection-wrapper">-->
+        <!--          <div class="buttons">-->
+        <!--            <div-->
+        <!--              @click="$refs.coll.prev()" class="prev-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+        <!--              <circle cx="32" cy="32" r="32" />-->
+        <!--              <path d="M39 32H25"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>-->
+        <!--              <path d="M32 39L25 32L32 25"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>-->
+        <!--            </svg>-->
+        <!--            </div>-->
+        <!--            <div @click="$refs.coll.next()" class="next-btn">-->
+        <!--              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+        <!--                <circle cx="32" cy="32" r="32" />-->
+        <!--                <path d="M25 32H39"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>-->
+        <!--                <path d="M32 39L39 32L32 25"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>-->
+        <!--              </svg>-->
 
-<!--            </div>-->
-<!--          </div>-->
-<!--          <Carousel ref="coll" :settings="settings_top" :breakpoints="breakpoints_top">-->
-<!--            <Slide v-for="(item,index) in collection" :key="index">-->
-<!--              <div class="collection-item" >-->
-<!--                <img draggable="false" :src="item.img" alt="">-->
-<!--                <p class="collection-item__title">{{item.title}}</p>-->
-<!--                <p class="collection-item__text">{{item.text}}</p>-->
-<!--              </div>-->
-<!--            </Slide>-->
-<!--          </Carousel>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--          <Carousel ref="coll" :settings="settings_top" :breakpoints="breakpoints_top">-->
+        <!--            <Slide v-for="(item,index) in collection" :key="index">-->
+        <!--              <div class="collection-item" >-->
+        <!--                <img draggable="false" :src="item.img" alt="">-->
+        <!--                <p class="collection-item__title">{{item.title}}</p>-->
+        <!--                <p class="collection-item__text">{{item.text}}</p>-->
+        <!--              </div>-->
+        <!--            </Slide>-->
+        <!--          </Carousel>-->
 
-<!--        </div>-->
+        <!--        </div>-->
         <q-img src="~assets/coll.png"/>
 
       </div>
     </section>
+    <img class="section_top" src="~assets/bg3_top.png" alt="">
     <section class="rarity">
       <div class="container">
         <p class="text-72 text-practice text-w-shadow-b text-w text-center mb-45">rarity</p>
@@ -219,7 +221,7 @@ You will get acquainted with the hero of the Soviet stage, trying on the images 
         <p class="text-72 text-practice text-w-shadow-b text-w text-center mb-30">Alpha-Bears Collection</p>
         <p class="text-24 offer-text text-center mb-30">
           That's why it's really worth hunting.<br>
-Of course, every bear in our collection is equally unique and valuable to us, but there are those that stand out strongly from the general background, such we call Alpha.
+          Of course, every bear in our collection is equally unique and valuable to us, but there are those that stand out strongly from the general background, such we call Alpha.
         </p>
         <div class="rare-collection-wrapper">
           <div class="buttons">
@@ -284,6 +286,7 @@ Of course, every bear in our collection is equally unique and valuable to us, bu
 
       </div>
     </section>
+    <img class="section_top" src="~assets/bg4_top.png" alt="">
     <section ref="journey" class="journey">
       <img draggable="false" class="journey-img-l gt-sm" src="~assets/j-l.png" alt="">
       <img draggable="false" class="journey-img-r gt-sm" src="~assets/j-r.png" alt="">
@@ -312,6 +315,7 @@ Of course, every bear in our collection is equally unique and valuable to us, bu
         </div>
       </div>
     </section>
+    <img class="section_top" src="~assets/bg5_top.png" alt="">
     <section class="team">
       <div ref="team" class="container">
         <p class="text-72 text-practice text-w-shadow-w text-b text-center mb-45">the team</p>
@@ -337,7 +341,7 @@ Of course, every bear in our collection is equally unique and valuable to us, bu
         </div>
       </div>
     </section>
-
+    <img class="section_top" src="~assets/bg6_top.png" alt="">
     <section class="faq">
       <div ref="faq" class="container">
         <p class="text-72 text-practice text-w-shadow-b text-w text-center mb-80">faq</p>
@@ -350,10 +354,10 @@ Of course, every bear in our collection is equally unique and valuable to us, bu
                 group="somegroup"
                 expand-icon-class="text-green-11"
                 :label="item.q"
-                :header-class="$q.screen.lt.md ? 'text-green-11  text-body1' : 'text-green-11  text-h6'"
+                :header-class="$q.screen.lt.md ? 'text-dark  text-body1' : 'text-dark  text-h6'"
               >
                 <q-card style="background: transparent">
-                  <q-card-section>
+                  <q-card-section class="text-dark">
                     {{item.a}}
                   </q-card-section>
                 </q-card>
@@ -365,6 +369,7 @@ Of course, every bear in our collection is equally unique and valuable to us, bu
 
       </div>
     </section>
+    <img class="section_top" src="~assets/bg7_top.png" alt="">
     <section class="social">
       <div ref="social" class="container">
         <p class="text-72 text-practice text-w-shadow-b text-w text-center mb-45">social</p>
@@ -989,8 +994,13 @@ export default {
           padding: 0
           li
             margin-bottom: 20px
+
+.section_top
+  display: block
+  width: 100%
+  height: auto
 .offer
-  background: url(~assets/offer-bg.jpg) no-repeat center
+  background: url(~assets/offer-bg.png) no-repeat center
   background-size: cover
   padding-top: 170px
   text-align: center
@@ -1038,8 +1048,8 @@ export default {
       p
         margin-bottom: 40px !important
 .collection
-  padding: 280px 0 100px 0
-  background: url(~assets/c-bg.jpg) no-repeat center
+  padding: 100px 0 100px 0
+  background: url(~assets/bg_2.png) repeat-y center
   background-size: cover
   margin-top: -1px
 
@@ -1110,7 +1120,7 @@ export default {
 
 .rare-collection
   padding: 120px 0 200px 0
-  background: url(~assets/r-c-bg.jpg) no-repeat center
+  background: url(~assets/bg_3.png) no-repeat center
   background-size: cover
   margin-top: -1px
 
@@ -1290,10 +1300,9 @@ export default {
 
 
 .journey
-  padding: 200px 0
-  //background: url(~assets/c-bg.jpg) no-repeat center
-  background: blue
-  background-size: cover
+  padding: 100px 0
+  background: url(~assets/bg_4.png) repeat-y center
+
   margin-top: -1px
   position: relative
   &-img-l
@@ -1372,8 +1381,8 @@ export default {
 
 
 .team
-  padding: 200px 0
-  background: #3ce03f
+  padding: 100px 0
+  background: url(~assets/bg_5.png) repeat-y center
   &-grid
     //max-width: 870px
     //margin: 0 auto 80px
@@ -1418,8 +1427,8 @@ export default {
     grid-gap: 60px
 
 .faq
-  padding: 200px 0
-  background: #0e13cd
+  padding: 100px 0
+  background: url(~assets/bg_6.png) no-repeat center
   &-wrapper
     position: relative
     max-width: 870px
@@ -1435,8 +1444,8 @@ export default {
       &::before
         content: none
 .social
-  padding: 200px 0 400px 0
-  background: #3c60e0
+  padding: 100px 0 400px 0
+  background: url(~assets/bg_7.png) no-repeat center
   & .mb-45
     position: relative
     z-index: 0
@@ -1466,7 +1475,7 @@ export default {
         bottom: -30%
 .footer
   position: relative
-  background: blue
+  background: url(~assets/footer_bg.png) repeat-y center
   &::before
     position: absolute
     content: url(~assets/footer.png)
@@ -1478,9 +1487,10 @@ export default {
     &::before
       content: url(~assets/footer-sm.png)
       top: -130px
+
 .rarity
-  background: dodgerblue
-  padding: 200px 0
+  background: url(~assets/bg_3.png) repeat-y center
+  padding: 100px 0
 
   &-wrapper
     background: #FFFFFF
